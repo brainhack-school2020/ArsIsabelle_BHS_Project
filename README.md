@@ -1,5 +1,7 @@
 # ArsIsabelle_BHS_Project
-Would like to use this to vizualize and classify FFR, an auditory neural signal captured with EEG or MEG that can be also put in relation with structural MRI for source localization
+Would like to use this project to vizualize and classify Frequency Following Responses, aka FFRs, which are auditory neural signals captured with EEG or MEG that provide a representation of how the brain encode sounds. 
+
+Overall, I would like to organize a set of EEG-FFR data according to standards in project management, use a machine-learning classifier to differentiates components associated with the signal (e.g. if they come from a population of musicians vs. non-musician, caracteristics of the stimuli that generated the signal, etc.). Finally, I would like to use the vizualization tools we learn through this course to vizualize the data and results from this classification.
 
 [![](https://img.shields.io/badge/Visit-our%20project%20page-ff69b4)](https://school.brainhackmtl.org/project/template)
 
