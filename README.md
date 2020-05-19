@@ -1,5 +1,5 @@
 # ArsIsabelle_BHS_Project
-TBD
+Would like to use this to vizualize and classify FFR, an auditory neural signal captured with EEG or MEG that can be also put in relation with structural MRI for source localization
 
 [![](https://img.shields.io/badge/Visit-our%20project%20page-ff69b4)](https://school.brainhackmtl.org/project/template)
 
