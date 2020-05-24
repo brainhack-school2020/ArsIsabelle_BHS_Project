@@ -5,9 +5,13 @@
 ## Team Contributors 
 
 -Project Developped and implemented by Isabelle Arseneau-Bruneau (McGill)
+
 -Classifiers scripts provided by Fernando Llanos (University of Pittsburgh) 
+
 -Dataset Provided by: Emily B. J. Coffey (Concordia University)
+
 -Server to process data provided by: Zatorre Lab 
+
 -Brainhack School Instructors Supervision: Yann Harel (BHS Montreal 2020)
 
 ## Summary 
