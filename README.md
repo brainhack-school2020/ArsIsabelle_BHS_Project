@@ -1,21 +1,29 @@
 # ArsIsabelle_BHS_Project
-Would like to use this project to classify Frequency Following Responses (FFRs) and vizualize the results. FFRs are auditory neural signals captured with EEG or MEG that provide a representation of how the brain encode complex sounds (e.g. speech or music). As I have several collaborators on my doctoral thesis project (and we all have people to train on ML procedures), I would like to implement a set classifiers (Hidden Markov Model (HMM), Support Vector Machine (SVM), Cross-correlation (XCorr), LSTM) into a structure that would be more flexible, such that it could be moreeasily adapted to different datasets or variables. If time allow for it, I might imprement them in a container, but that would only be a secondary goal.  
+ 
+## Project developped through the BrainHack School Montreal 2020
 
-Overall, my goal is to learn how to run a machine-learning classifier to differentiates components (e.g. if the participants come from a population of musicians vs. non-musician, the stimuli that generated the signal is a speech vs. piano sound, etc.) associated with the EEG-FFR signal. Finally, I would like to use the vizualization tools to vizualize the results from this classification. If time allow for it, I will make sure the data is organized according to standards in project management (LORIS, BIDS).
+## Team Contributors 
 
-[![](https://img.shields.io/badge/Visit-our%20project%20page-ff69b4)](https://school.brainhackmtl.org/project/template)
-
-# A template for project reports at BrainHack School
-
-Team contributors: Brainhack School
+Project Developped and coordinated by Isabelle Arseneau-Bruneau (McGill)
+Classifiers scripts provided by Fernando Llanos (University of Pittsburgh) 
+Dataset Provided by: Emily B. J. Coffey (Concordia University)
+Brainhack School Instructors Supervision: Yann Harel
 
 ![BrainHack School](bhs2020.png)
 
 ## Summary 
 
+I would like to use this project to classify Frequency Following Responses (FFRs) and vizualize the results. FFRs are auditory neural signals captured with EEG or MEG that provide a representation of how the brain encode complex sounds (e.g. speech or music). As I am novice with coding and several collaborators on my doctoral thesis project have people to train on ML procedures, I would like to implement a set classifiers (Hidden Markov Model (HMM), Support Vector Machine (SVM), Cross-correlation (XCorr), LSTM) into a structure that would be more flexible, such that it could be reused in the future and more easily adapted to different datasets or variables. If time allow for it, I might implement them in a container, with vizualization tool to provide figures of the results, with data organized according to standards in project management, but that would only be a secondary goal. 
+
+
+
 Each project repository should have a markdown file explaining the background and objectives of the project, as well as a summary of the results, and links to the different deliverables of the project. Project reports are incorporated in the BrainHack School (BHS) [website](https://school.brainhackmtl.org/project). Note that the project summary also involves a number of key words. Those are listed on top of the [GitHub repository](https://github.com/brainhack-school2020/project_template), click `manage topics`.
 
 ## Project definition 
+
+Overall, my goal is to learn how to run a machine-learning classifier to differentiates components associated with the EEG-FFR signal (e.g. if the participants are musicians vs. non-musicians, if the stimuli that generated the signal is a speech vs. piano sound, etc.). As the equipment and hardware used to collect FFRs influence the number of trials required for the correct identification of known characteristics of the data, it could be useful to keep track of the number of FFR trials required by the classifier to yield significant results. Finally, I would like to use the vizualization tools to provide figures of the results of this classification exercise. The latest If time allow for it, I will make sure the data is organized according to standards in project management (LORIS, BIDS).
+
+[![](https://img.shields.io/badge/Visit-our%20project%20page-ff69b4)](https://school.brainhackmtl.org/project/template)
 
 ### Background
 
