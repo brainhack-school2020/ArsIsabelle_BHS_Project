@@ -4,33 +4,32 @@
 
 ## Team Contributors 
 
-Project Developped and coordinated by Isabelle Arseneau-Bruneau (McGill)
-
-Classifiers scripts provided by Fernando Llanos (University of Pittsburgh) 
-
-Dataset Provided by: Emily B. J. Coffey (Concordia University)
-
-Brainhack School Instructors Supervision: Yann Harel
-
-![BrainHack School](bhs2020.png)
+-Project Developped and implemented by Isabelle Arseneau-Bruneau (McGill)
+-Classifiers scripts provided by Fernando Llanos (University of Pittsburgh) 
+-Dataset Provided by: Emily B. J. Coffey (Concordia University)
+-Server to process data provided by: Zatorre Lab 
+-Brainhack School Instructors Supervision: Yann Harel (BHS Montreal 2020)
 
 ## Summary 
 
-I would like to use this project to classify Frequency Following Responses (FFRs) and vizualize the results. FFRs are auditory neural signals captured with EEG or MEG that provide a representation of how the brain encode complex sounds (e.g. speech or music). As I am novice with coding and several collaborators on my doctoral thesis project have people to train on ML procedures, I would like to implement a set classifiers (Hidden Markov Model (HMM), Support Vector Machine (SVM), Cross-correlation (XCorr), LSTM) into a structure that would be more flexible, such that it could be reused in the future and more easily adapted to different datasets or variables. If time allow for it, I might implement them in a container, with vizualization tool to provide figures of the results, with data organized according to standards in project management, but that would only be a secondary goal. 
+I would like to use this project to classify Frequency Following Responses (FFRs) and vizualize the results. FFRs are auditory neural signals captured with EEG or MEG that provide a representation of how the brain encode complex sounds (e.g. speech or music). As I am novice with coding and several collaborators on my doctoral thesis project have people to train on these ML procedures, I would like to implement a set of classifiers (Hidden Markov Model (HMM), Support Vector Machine (SVM), Cross-correlation (XCorr), LSTM) into a structure that would be beginner-friendly and that would provide flexible. Hence, this structure could be reused in the future and more easily adapted to different datasets or different variables. If time allow for it, the data will be organized according to standards in project management, I might implement the classifiers in a container, and use vizualization tools to provide figures of the results, but that would only be a secondary goal. 
 
 
-
-Each project repository should have a markdown file explaining the background and objectives of the project, as well as a summary of the results, and links to the different deliverables of the project. Project reports are incorporated in the BrainHack School (BHS) [website](https://school.brainhackmtl.org/project). Note that the project summary also involves a number of key words. Those are listed on top of the [GitHub repository](https://github.com/brainhack-school2020/project_template), click `manage topics`.
+*(Text bellow Remove when completed)* Each project repository should have a markdown file explaining the background and objectives of the project, as well as a summary of the results, and links to the different deliverables of the project. Project reports are incorporated in the BrainHack School (BHS) [website](https://school.brainhackmtl.org/project). Note that the project summary also involves a number of key words. Those are listed on top of the [GitHub repository](https://github.com/brainhack-school2020/project_template), click `manage topics`.*
 
 ## Project definition 
 
 Overall, my goal is to learn how to run a machine-learning classifier to differentiates components associated with the EEG-FFR signal (e.g. if the participants are musicians vs. non-musicians, if the stimuli that generated the signal is a speech vs. piano sound, etc.). As the equipment and hardware used to collect FFRs influence the number of trials required for the correct identification of known characteristics of the data, it could be useful to keep track of the number of FFR trials required by the classifier to yield significant results. Finally, I would like to use the vizualization tools to provide figures of the results of this classification exercise. The latest If time allow for it, I will make sure the data is organized according to standards in project management (LORIS, BIDS).
 
+*This will be replaced by a link to our my project on the BHS website*
 [![](https://img.shields.io/badge/Visit-our%20project%20page-ff69b4)](https://school.brainhackmtl.org/project/template)
 
 ### Background
 
-Inspired by the [Recurse Centre](https://www.recurse.com/) initiative (formally known as the "hacker school"), Brainhack School was established in 2018 with the mission to train students from a multidisciplinary background to a panoply of reproducible tools for neural data science, using a project-based approach. Following an initial 3-weeks long pilot, a 4th week was added with an intensive bootcamp, so that students could choose what tools to learn more deeply in their projects. As the course became integrated in standard curriculum at different universities, the formula seemed to be working. In order to streamline the different stages of the project, we needed some standard template and milestones to be incorporated in a github-based workflow. The "project template" project (which is also our first BHS meta-project) aims at establishing such a standardized template.
+![The Frequency Following Response and Machine-Learning](https://www-nature-com.proxy3.library.mcgill.ca/articles/s41467-019-13003-w/figures/1)
+
+
+*Inspired by the [Recurse Centre](https://www.recurse.com/) initiative (formally known as the "hacker school"), Brainhack School was established in 2018 with the mission to train students from a multidisciplinary background to a panoply of reproducible tools for neural data science, using a project-based approach. Following an initial 3-weeks long pilot, a 4th week was added with an intensive bootcamp, so that students could choose what tools to learn more deeply in their projects. As the course became integrated in standard curriculum at different universities, the formula seemed to be working. In order to streamline the different stages of the project, we needed some standard template and milestones to be incorporated in a github-based workflow. The "project template" project (which is also our first BHS meta-project) aims at establishing such a standardized template.*
 
 ### Tools 
 
