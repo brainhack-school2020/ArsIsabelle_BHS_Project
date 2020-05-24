@@ -5,8 +5,11 @@
 ## Team Contributors 
 
 Project Developped and coordinated by Isabelle Arseneau-Bruneau (McGill)
+
 Classifiers scripts provided by Fernando Llanos (University of Pittsburgh) 
+
 Dataset Provided by: Emily B. J. Coffey (Concordia University)
+
 Brainhack School Instructors Supervision: Yann Harel
 
 ![BrainHack School](bhs2020.png)
