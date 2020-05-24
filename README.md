@@ -29,7 +29,7 @@ The equipment and hardware used to collect FFRs influence the quality of the sig
 
 ### Background
 
-I invite you to watch the short description of my project on youtube [at timing 1:14:24](https://www.youtube.com/watch?v=MwyUUV6Vfdk&t=5198s) 
+I invite you to watch the short description of my project on youtube [at timing 1:14:24](https://youtu.be/MwyUUV6Vfdk?t=4464) 
 
 ![The Frequency Following Response and Machine-Learning](https://www-nature-com.proxy3.library.mcgill.ca/articles/s41467-019-13003-w/figures/1)
 
