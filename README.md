@@ -1,14 +1,14 @@
-# Learning How to Run Matlab EEG-FFR Classifiers   
+# Learning How to Run EEG-FFR Classifiers in MATLAB   
  
 ## Developped through the BrainHack School Montreal 2020
 
 ## Team Contributors 
 
--Project Developed and implemented by Isabelle Arseneau-Bruneau (McGill)
+-Project Developed and implemented by Isabelle Arseneau-Bruneau (McGill University)
 
--Classifiers scripts provided by Fernando Llanos (University of Pittsburgh) 
+-Original classifiers scripts provided by Fernando Llanos, Ph.D. (University of Pittsburgh) 
 
--Dataset Provided by Emily B. J. Coffey (Concordia University)
+-Dataset Provided by Emily B. J. Coffey, Ph.D. (Concordia University)
 
 -Server provided by the Zatorre Lab (McGill University)
 
