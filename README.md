@@ -58,7 +58,7 @@ Tools I will use :
 * Hugo to submit a pull request to the [BrainHack School website](https://github.com/BrainhackMTL/school) to add the project description to the website. 
 
 Additional Tools Depending on Time:
-* Jupyter Notebook (TBC)
+* Jupyter-MATLAB Notebook (and dependencies)
 * Container (TBC)
 * LORIS and EEG-BIDS (TBC)
   
