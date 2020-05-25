@@ -3,104 +3,105 @@
 ## Developped through the BrainHack School Montreal 2020
 
 ## Team Contributors 
--Project Developped and implemented by Isabelle Arseneau-Bruneau (McGill)
+
+-Project Developed and implemented by Isabelle Arseneau-Bruneau (McGill)
 
 -Classifiers scripts provided by Fernando Llanos (University of Pittsburgh) 
 
--Dataset Provided by: Emily B. J. Coffey (Concordia University)
+-Dataset Provided by Emily B. J. Coffey (Concordia University)
 
--Server to process data provided by: Zatorre Lab 
+-Server provided by the Zatorre Lab (McGill University)
 
--Brainhack School Instructors Supervision: Yann Harel (BHS Montreal 2020)
+-Brainhack School Instructor: Yann Harel (BHS Montreal 2020)
 
 ## Summary 
-I would like to use this project to classify Frequency Following Responses (FFRs) generated and vizualize the results. FFRs are auditory neural signals captured with EEG or MEG that provide a representation of how the brain encode complex sounds (e.g. speech or music). As I am novice with coding and several collaborators on my doctoral thesis project also have people to train on these ML procedures, I would like to implement a set of classifiers (Hidden Markov Model (HMM), Support Vector Machine (SVM), Cross-correlation (XCorr), LSTM) into a structure that would be beginner-friendly and that would provide more flexibility for future usage. Hence, this structure could be more easily adaptable for different datasets or variables. If time allow for it, the data will be organized according to standards in project management, I might implement the classifiers in a container, and use vizualization tools to provide figures of the results, but these steps would be secondary goals as my skills are limited. 
 
-[Check our project on the Brainhack School Webpage](https://fakefornowbutinprogress.org)
+I would like to use this project to classify Frequency Following Responses (FFRs) and vizualize the results of this classification. FFRs are auditory neural signals captured with EEG or MEG that provide a representation of how the brain encode complex sounds (e.g. speech or music). As I am novice with coding, I would like to implement a set of classifiers (Hidden Markov Model (HMM), Support Vector Machine (SVM), Cross-correlation (XCorr), LSTM) into a structure that would be beginner-friendly and that would provide more flexibility for future usage. I would like to put together a useful resource for my futur self, my research assistant, and the collaborators on my doctoral thesis project that also have students to train on ML procedures. Hence, I aim for a structure that could be optimaly adaptable for different datasets or variables. If time allow for it, the data will be organized according to standards in project management (LORIS, EEG-BIDS), the classifiers scripts will be implemented in a container, and I will use vizualization tools to provide figures of the results. However, these steps remains secondary goals as my skills (and the time for this project) are limited. 
+
+[Check this project on the Brainhack School Webpage] https://fakefornowbutinprogress.org
 
 ## Project definition 
 
-Overall, my goal is to learn how to run a machine-learning classifier writen in MATLAB and to examine if it can differentiate known components associated with the EEG-FFR signal (e.g. if the participants are musicians vs. non-musicians, if the stimuli that generated the FFRs are speech vs. piano sounds, etc.). 
+Overall, my goal is to learn how to run a machine-learning classifier writen in MATLAB and to examine if it can predict other variables that are associated with the EEG-FFR signal (e.g. if the participants are musicians vs. non-musicians, if the stimuli that generated the FFRs are speech vs. piano sounds, etc.). 
 
-The equipment and hardware used to collect FFRs influence the quality of the signal, and thus, the number of trials required for correct identification of known characteristics of the data. Thus, it can also be useful for developping research designs to keep track of the number of FFR trials required by each classifier to yield significant results. If time allow for it, I would like to use vizualization tools to provide figures of the results of this classification exercise. If this doesn't require to much adaptation, I will organize the data according to standards in project management (LORIS, EEG-BIDS).
-
-*This will be replaced by a link to our my project on the BHS website*
-[![](https://img.shields.io/badge/Visit-our%20project%20page-ff69b4)](https://school.brainhackmtl.org/project/template)
+I hope to run and put together beginner-friendly procedures that would make ML classification writen in MATLAB more accessible. As the equipment and hardware used to record FFRs can influence the quality of the signal, the scripts could also track the number of trials required for a significant classification. It would be useful to adjust research designs and target more feasable research questions. In addition to keeping track of the number of FFR trials, the classifiers would ideally be flexible for datasets of various dimensions. 
 
 ### Background
 
-I invite you to watch the short description of my project on youtube [at timing 1:14:24](https://youtu.be/MwyUUV6Vfdk?t=4464) 
+You may watch this short powerpoint presentation of the description of my project on youtube [at timing 1:14:24](https://youtu.be/MwyUUV6Vfdk?t=4464) 
 
 ![The Frequency Following Response and Machine-Learning](https://www-nature-com.proxy3.library.mcgill.ca/articles/s41467-019-13003-w/figures/1)
 
-Over the last decades, neuroimaging studies have provided cumulative evidence of the benefits of musical training, in particular how such training promotes neuroplasticity (Herholz et al. 2012). A clear benefit of musical training is manifested at the level of the frequency following response (FFR), an electrical potential sensitive to phase-locking captured by EEG that arises from subcortical and cortical sources (Coffey et al., 2016). They constitute a first and extremely rapid (starting at 7 ms) reaction of the brain to an auditory stimulus. FFRs are neural representations of the periodicity of entering auditory information (such as speech or music) [Kraus et al., 2017]. To decode auditory input, brainstem nuclei send information about sound features to the cortex. These features are used to build up more abstract representations, and allow us to recognize speech or musical sounds (Coffey et al., 20161; Kraus et al., 2010; 2014; 2017b; 2017c). 
+Over the last decades, neuroimaging studies have provided cumulative evidence of the benefits of musical training, in particular how such training promotes neuroplasticity (Herholz et al. 2012). A clear benefit of musical training is manifested at the level of the frequency following response (FFR), an electrical potential sensitive to phase-locking captured by EEG that arises from subcortical and cortical sources (Coffey et al., 2016). The FFR is an extremely rapid (starting at 7 ms) reaction of the brain to an auditory stimulus. It is a neural representation of the periodicity of the entering auditory information and allow us to recognize speech or music sounds (Coffey et al., 20161; Kraus et al., 2010; 2014; 2017b; 2017c). With both cortical and subcortical contributors that modify its quality (Coffey, Herholz, Chepesiuk, Baillet, & Zatorre, 2016), the FFR represents an integrated response of the entire auditory system (Irvine et al., 2018).  
 
-With both cortical and subcortical contributors that modify its quality (Coffey, Herholz, Chepesiuk, Baillet, & Zatorre, 2016), the FFR constitutes an integrated response of the entire auditory system (Irvine et al., 2018). Further, the FFR is strongly associated with higher-level cognitive functions (Kraus, Anderson, White-Schwoch, Fay, & Popper, 2017); its quality affects learning and it has served as predictor of complex functions such as reading (Hornickel & Kraus, 2013). Even more significant, the FFR varies in individuals as a function of experience (enhanced in musicians, tonal language speakers, bilinguals [Coffey et al., 2016; Kraus & Chandrasekaran, 2010; Krizman, Marian, Shook, Skoe, & Kraus, 2012]) or pathologies (decreased in autism, dyslexia, traumatic brain injuries [Hornickel & Kraus, 2013;  Nina Kraus et al., 2016;, for extensive literature survey, see Kraus et al., 2017]. Several authors have thus proposed that it may serve as an auditory biomarker to target treatments and educational interventions (Kraus et al., 2015; Bidelman et al., 2017). Musicians are of particular interest because of correlations between the augmentation of their FFR quality and enhancements in their perception skills (Coffey et al., 2016; Kraus & Chandraserakan, 2010). The greater the musical training, the closer the neuronal representation approaches its corresponding auditory stimuli (Kraus et al., 2010b, 2015, 2017). The signal is transmitted faster, and becomes more precise and robust, which then benefits higher-order cognitive functions (Coffey et al., 2016; Kraus, Anderson, White-Schwoch, Fay, & Popper, 2017). This is a remarkable phenomenon, but how these enhancements are achieved remains unclear. 
+Interestingly, the FFR varies in individuals as a function of experience (enhanced in musicians, tonal language speakers, bilinguals [Coffey et al., 2016; Kraus & Chandrasekaran, 2010; Krizman, Marian, Shook, Skoe, & Kraus, 2012]) or pathologies (decreased in autism, dyslexia, traumatic brain injuries [Hornickel & Kraus, 2013;  Nina Kraus et al., 2016;, for extensive literature survey, see Kraus et al., 2017]. Several authors have thus proposed that it may serve as an auditory biomarker to target treatments and educational interventions (Kraus et al., 2015; Bidelman et al., 2017). Musicians are of particular interest because of correlations between the augmentation of their FFR quality and enhancements in their perception skills (Coffey et al., 2016; Kraus & Chandraserakan, 2010). The greater the musical training, the closer the neuronal representation approaches its corresponding auditory stimuli (Kraus et al., 2010b, 2015, 2017). The signal is transmitted faster, and becomes more precise and robust, which then benefits higher-order cognitive functions (Coffey et al., 2016; Kraus, Anderson, White-Schwoch, Fay, & Popper, 2017). This is a remarkable phenomenon, but how these enhancements are achieved remains unclear. 
 
-A
+A considerable challenge for the understanding of FFR enhancements mechanisms is the very small amplitude (measured in nanovolt) and the bad signal-to-noise ratio (SNR) of the neural signal. Hence, measuring FFRs typically requires several thousand exposures to the same auditory stimulus (which are then averaged). These recording difficulties considerably limits the research questions that can be expored with FFRs while they remain a key component of plasticity mechanisms associated with musical training. 
+
+Combined with optimized equipment and hardware, machine-learning classifiers developed with speech-evoked neurophysiological responses have recently considerably reduced the number of trials necessary to obtain a usable FFR signal (Zilong Xie et al., 2019). The classification of FFR is starting to emmerge as an objective mean to assess auditory perception (Llanos et al., 2019; Losorelli et al., 2019 PREPRINT). Thus, my current BHS project aims to run classifiers on FFRs that were generated by 100 Hz speech and piano tones in musicians and non-musicians. I have to perform these procedures as part of my doctoral thesis project and with this course, I hope to implement them in a way that will facilitate collaborations and open science.  
 
 ### Tools 
 
-The "project template" project will rely on the following technologies: 
- * [Markdown](https://guides.github.com/features/mastering-markdown/), to structure the text.
- * The [Hugo website framework](https://gohugo.io) which is used by the BHS website. This makes it possible to easily add the markdown project description to the website. 
- * Adding the project to the website relies on github, through pull requests. 
+Xie et al., 2019 describes procedures and toolboxes implemented in MATLAB. As our lab also uses this software to analyse EEG-FFR, I will develop my project in this language. 
 
+Tools I will use : 
+* A Bash Shell
+* A Remote Server (ZatorreLabServer.mni.mcgill.ca)
+* MATLAB
+* The gpu MATLAB Toolboxe (and other toolboxes TBC)
+* Visual Studio Code 
+* Github
+* HMM, SVM and XCorr models (originaly developped by Fernando Llanos)
+* SLTM model TBC (originaly developped by Fernando Llanos)
+
+* [Markdown](https://guides.github.com/features/mastering-markdown/), to structure my text as I am very novice with coding
+* Hugo to submit a pull request to the [BrainHack School website](https://github.com/BrainhackMTL/school) to add the project description to the website. 
+
+Additional Tools Depending on Time:
+* Jupyter Notebook (TBC)
+* Container (TBC)
+* LORIS and EEG-BIDS (TBC)
+  
 ### Data 
 
-Ultimately, the project template will be used by all BHS participants. Data on the different projects will be aggregareted on the [following page](https://school.brainhackmtl.org/project). This will serve as an additional example gallery in the years to come for future brainhack school students. Many reports from [BHS 2019](https://github.com/mtl-brainhack-school-2019) already used this template. 
+The dataset for this project was previously published by Emily Coffey and colleagues from the Zatorre Lab at McGill University (Coffey et al., 2017). It consists of a set of pre-processed EEG-FFR collected in 28 subjects (14 musicians and 14 non-musicians). Demographic and music experience information were also collected with the Montreal Music History Questionnaire (Coffey et al., 2011). The stimuli used were a speech |dah| and a piano tone stimuli, with both a duration of 100ms and a fondamental frequency of 100 Hz. For more details on this dataset, please see [Cortical Correlates of the Auditory Frequency-Following and Onset Responses: EEG and fMRI Evidence](https://www.jneurosci.org/content/37/4/830)
 
 ### Deliverables
 
 At the end of this project, we will have:
  - The current markdown document, completed and revised.
- - A gallery of the student projects at Brainhack 2020.
- - Instructions on the website about how to submit a pull request to the [BrainHack School website](https://github.com/BrainhackMTL/school) in order to add the project description to the website. 
+ - Beginner-Friendly procedures to run a HMM, SVM and XCorr classifiers on FFR-EEG data
+ - A section in the gallery of the BHS website about this project
 
 ## Results 
+By the end of this project, I aim to be able to run classifiers on EEG-FFR and have a code structure that I will be able to reuse in the future. 
 
 ### Progress overview
 
-The project was swiftly initiated by P Bellec, based on the existing template created in 2019 by Tristan Glatard and improved by different students. It was really not that hard. Community feedback is expected to lead to rapid further improvements of this first version. 
+After extensive research, I found and downloaded a pre-processed FFR dataset and classifiers scripts for an HMM, a SVM, a cross-correlation and a STLM classifiers for EEG-FFR. I obtained the author's permission, installed the gpu MATLAB Toolbox on my computer. I faced issues running the scripts locally on my computer and will need to run the classifiers on my Lab server. I am currently verifying the compatibility of jupyter notebooks with MATLAB. My next steps, are to run the classifiers, and if it works, to write detailled explanations for each steps in a parralel version of the scripts.   
 
 ### Tools I learned during this project
 
- * **Meta-project** P Bellec learned how to do a meta project for the first time, which is developping a framework while using it at the same time. It felt really weird, but somehow quite fun as well. 
- * **Github workflow-** The successful use of this template approach will demonstrate that it is possible to incorporate dozens of students presentation on a website collaboratively over a few weeks. 
- * **Project content** Through the project reports generated using the template, it is possible to learn about what exactly the brainhack school students are working on. 
+Hopefully the ones named above! (More details coming soon) 
  
 ### Results 
 
-#### Deliverable 1: report template
+(More details coming soon) 
 
-You are currently reading the report template! I will let you judge whether it is useful or not. If you think there is something that could be improved, please do not hesitate to open an issue [here](https://github.com/brainhack-school2020/project_template/issues) and let us know. 
+#### Deliverable 1: A Project Report 
 
-#### Deliverable 2: project gallery
+Check out the evolution of this project and others on the [2020 BHS github organization](https://github.com/brainhack-school2020)
 
-There is not yet a project gallery, as BHS 2020 is the first edition that will incorporate it on the website. You can still check out the [2019 BHS github organization](https://github.com/mtl-brainhack-school-2019)
+#### Deliverable 2: An Entry in the Project Gallery
 
-##### ECG pupilometry pipeline by Marce Kauffmann 
+This project will be incorporated in the project gallery of the BHS 2020 website at the beginning of June 2020. (More details coming soon)  
 
-The repository of this project can be found [here](https://github.com/mtl-brainhack-school-2019/ecg_pupillometry_pipeline_kaufmann). The objective was to create a processing pipeline for ECG and pupillometry data. The motivation behind this task is that Marcel's lab (MIST Lab @ Polytechnique Montreal) was conducting a Human-Robot-Interaction user study. The repo features:
- * a [video introduction](http://www.youtube.com/watch/8ZVCNeX42_A) to the project.
- * a presentation [made in a jupyter notebook](https://github.com/mtl-brainhack-school-2019/ecg_pupillometry_pipeline_kaufmann/blob/master/BrainHackPresentation.ipynb) on the results of the project.
- * Notebooks for all analyses.
- * Detailed requirements files, making it easy for others to replicate the environment of the notebook.
- * An overview of the results in the markdown document.
- 
-##### Other projects
-Here are other good examples of repositories:
-- [Learning to manipulate biosignals with python](https://github.com/mtl-brainhack-school-2019/franclespinas-biosignals) by François Lespinasse
-- [Run multivariate anaylysis to relate behavioral and electropyhysiological data](https://github.com/mtl-brainhack-school-2019/PLS_PV_Behaviour) by Mike
-- [PET pipeline automation and structural MRI exploration](https://github.com/mtl-brainhack-school-2019/rwickens-sMRI-PET) by Rebekah Wickens
-- [Working with PSG [EEG] data from Parkinson's patients](https://github.com/mtl-brainhack-school-2019/Soraya-sleep-data-in-PD-patients) by Cryomatrix
-- [Exploring Brain Functional Activation in Adolescents Who Attempted Suicide](https://github.com/mtl-brainhack-school-2019/Anthony-Gifuni-repo) by Anthony Gifuni
-
-#### Deliverable 3: Instructions 
+#### Deliverable 3: Instructions to run ML Classifiers on EEG-FFR in MATLAB
  
  To be made available soon. 
  
- 
 ## Conclusion and acknowledgement
 
-The BHS team hope you will find this template helpful in documenting your project. Developping this template was a group effort, and benefitted from the feedback and ideas of all BHS students over the years.
+I would like to acknowledge the assistance of Yann Harel as my Individual Instructor at the Brainhack School) and the contributions of my collaborators Fernando Llanos (for the classifiers original script), and Emily Coffey (for the dataset).
+
+Although my project was implemented in MATLAB, this course made me more aware of the importance of open science practices. Thus, I would like to explore similar ML procedures in python during the remaining years of my PhD. The BHS course has allowed me to discover numerous resources in python and among my research, I found a relevant jupyter notebook developed by Christopher Holdgraf [Encoding and Decoding Models in Cognitive Electrophysiology](https://github.com/choldgraf/paper-encoding_decoding_electrophysiology). I would like to explore it as a next step.     
