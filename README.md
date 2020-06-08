@@ -6,29 +6,27 @@
 
 -Project Developed and implemented by Isabelle Arseneau-Bruneau (McGill University)
 
--Original classifiers scripts provided by Fernando Llanos, Ph.D. (University of Pittsburgh) 
+-Original classifiers Scripts provided by Fernando Llanos, Ph.D. (University of Pittsburgh) 
 
 -Dataset Provided by Emily B. J. Coffey, Ph.D. (Concordia University)
 
--Server provided by the Zatorre Lab (McGill University)
-
--Brainhack School Instructor: Yann Harel (BHS Montreal 2020)
+-Brainhack School Instructor: Pierre Bellec, Tristan Glatard, Yann Harel (BHS Montreal 2020)
 
 ## Summary 
 
-I would like to use this project to classify Frequency Following Responses (FFRs) and vizualize the results of this classification. FFRs are auditory neural signals captured with EEG or MEG that provide a representation of how the brain encode complex sounds (e.g. speech or music). As I am novice with coding, I would like to implement a set of classifiers (Hidden Markov Model (HMM), Support Vector Machine (SVM), Cross-correlation (XCorr), LSTM) into a structure that would be beginner-friendly and that would provide more flexibility for future usage. I would like to put together a useful resource for my futur self, my research assistant, and the collaborators on my doctoral thesis project that also have students to train on ML procedures. Hence, I aim for a structure that could be optimaly adaptable for different datasets or variables. If time allow for it, the data will be organized according to standards in project management (LORIS, EEG-BIDS), the classifiers scripts will be implemented in a container, and I will use vizualization tools to provide figures of the results. However, these steps remains secondary goals as my skills (and the time for this project) are limited. 
-
-[Check this project on the Brainhack School Webpage] https://fakefornowbutinprogress.org
+I would like to use this project to classify Frequency Following Responses (FFRs) with Machine-Learning, notably with a Hidden MArkov Model. FFRs are auditory neural signals captured with EEG or MEG that provide a representation of how the brain encode complex sounds (e.g. speech or music). As I am novice with coding, I would like to implement my classifier (Hidden Markov Model (HMM) into a structure that would be beginner-friendly and that would provide more flexibility for future usage (e.g. with other classifiers such as Support Vector Machine (SVM), Cross-correlation (XCorr), LSTM, with other variables, and with different datasets). I would like to put together a set of resources for my futur self, my research assistant, and the collaborators on my doctoral thesis project ( who also have students to train on these ML procedures). Hence, I aim for a structure that would be optimaly adaptable for different datasets or variables. The data will be organized according to components of standards in project management (EEG-BIDS), the classifiers Notebook will be implemented in a virtual environement, and basic matlab vizualization tools will provide figures of the results. However, the latest steps remain a secondary goal as my skills (and the time allowed for this project) are limited. 
 
 ## Project definition 
 
-Overall, my goal is to learn how to run a machine-learning classifier writen in MATLAB and to examine if it can predict other variables that are associated with the EEG-FFR signal (e.g. if the participants are musicians vs. non-musicians, if the stimuli that generated the FFRs are speech vs. piano sounds, etc.). 
+Overall, my goal is to learn how to run a machine-learning classifier writen in MATLAB and to examine if it can predict a variable that is associated with the EEG-FFR signal (e.g. if the stimuli that generated the FFRs is a speech vs. piano sound, but it could be other variables cuch as if the participants are musicians vs. non-musicians, etc.). 
 
-I hope to run and put together beginner-friendly procedures that would make ML classification writen in MATLAB more accessible. As the equipment and hardware used to record FFRs can influence the quality of the signal, the scripts could also track the number of trials required for a significant classification. It would be useful to adjust research designs and target more feasable research questions. In addition to keeping track of the number of FFR trials, the classifiers would ideally be flexible for datasets of various dimensions. 
+I hope to run and put together beginner-friendly procedures that would make ML classification writen in MATLAB more accessible. As the equipment and hardware used to record FFRs can influence the quality of the signal, the scripts could also track the number of trials required for a significant classification. It would be useful to adjust research designs and target more feasable research questions. In addition to keeping track of the number of FFR trials, the instruction of the scripts would ideally make it more flexible for datasets of different dimensions. 
+
+## ASSIGNMENT WEEK 3
+
+[Check the video description of my project on Youtube!](https://www.youtube.com/watch?v=6lX_-AgOXug) 
 
 ### Background
-
-You may watch this short powerpoint presentation of the description of my project on youtube [at timing 1:14:24](https://youtu.be/MwyUUV6Vfdk?t=4464) 
 
 ![The Frequency Following Response and Machine-Learning](https://www-nature-com.proxy3.library.mcgill.ca/articles/s41467-019-13003-w/figures/1)
 
@@ -102,6 +100,4 @@ This project will be incorporated in the project gallery of the BHS 2020 website
  
 ## Conclusion and acknowledgement
 
-I would like to acknowledge the assistance of Yann Harel as my Individual Instructor at the Brainhack School) and the contributions of my collaborators Fernando Llanos (for the classifiers original script), and Emily Coffey (for the dataset).
-
-Although my project was implemented in MATLAB, this course made me more aware of the importance of open science practices. Thus, I would like to explore similar ML procedures in python during the remaining years of my PhD. The BHS course has allowed me to discover numerous resources in python and among my research, I found a relevant jupyter notebook developed by Christopher Holdgraf [Encoding and Decoding Models in Cognitive Electrophysiology](https://github.com/choldgraf/paper-encoding_decoding_electrophysiology). I would like to explore it as a next step.     
+I would like to acknowledge the assistance of Pierre Bellec, Tristan Glatard, and Yann Harel as my Individual Instructors at the Brainhack School) and the contributions of my collaborators Fernando Llanos (for the classifiers original script), and Emily Coffey (for the dataset).
