@@ -1,8 +1,8 @@
-# Learning How to Run EEG-FFR Classifiers in MATLAB   
+# Learning How to Run a EEG-FFR Classifiers in MATLAB   
  
 ## Developped through the BrainHack School Montreal 2020
 
-## Team Contributors 
+## Contributors 
 
 -Project Developed and implemented by Isabelle Arseneau-Bruneau (McGill University)
 
@@ -14,13 +14,18 @@
 
 ## Summary 
 
-I would like to use this project to classify Frequency Following Responses (FFRs) with Machine-Learning, notably with a Hidden MArkov Model. FFRs are auditory neural signals captured with EEG or MEG that provide a representation of how the brain encode complex sounds (e.g. speech or music). As I am novice with coding, I would like to implement my classifier (Hidden Markov Model (HMM) into a structure that would be beginner-friendly and that would provide more flexibility for future usage (e.g. with other classifiers such as Support Vector Machine (SVM), Cross-correlation (XCorr), LSTM, with other variables, and with different datasets). I would like to put together a set of resources for my futur self, my research assistant, and the collaborators on my doctoral thesis project ( who also have students to train on these ML procedures). Hence, I aim for a structure that would be optimaly adaptable for different datasets or variables. The data will be organized according to components of standards in project management (EEG-BIDS), the classifiers Notebook will be implemented in a virtual environement, and basic matlab vizualization tools will provide figures of the results. However, the latest steps remain a secondary goal as my skills (and the time allowed for this project) are limited. 
+This project is a tutorial. It aims for you to learn how to use a machine-learning classifier (the Hidden Markov Model) with an auditory neural signal called the Frequency Following Responses (FFRs). The FFR is an electrophysiological measure, recorded on the scalp with EEG or MEG, that provide a representation of how well the brain encode complex sounds (e.g. speech or music). It informs us on how individual encode and process sounds such as speech or music. It is a fascinating neurological measure, but the analysis techniques are not always the most accessible. 
+
+This tutorial first aim is to provide a reproducible workflow that is beginner-friendly with machine-learning procedures. As I am novice with coding, I aim to implement a classifier (Hidden Markov Model [HMM]) into a structure that would be beginner-friendly and that would provide more flexibility for future usages and allow to build extensions (e.g. with other classifiers such as Support Vector Machine (SVM), Cross-correlation (XCorr), LSTM, with other variables, and with different datasets). I aim to put together a set of resources for  for my research assistants, my futur self, the collaborators on my doctoral thesis project (who also have students to train on these ML procedures), and other FFR researchers. The data of this tutorial will be using format that align with components of standards in project management (EEG-BIDS), classifier Notebooks will be implemented in a virtual environement allowing the use MATLAB scripts, and basic matlab vizualization tools will provide figures of the results. 
+
+### Notes on Open Science Practices and Matlab
+Who said that MATLAB users can't have open science practices? Matlab may not be an open source software, but it would be sad to limit the open science movement to the type of software that one uses. Specialized fields, such as FFR research, have most of their resources, expertise, and tools in this language. At the current moment, it would be much much much harder to study this neural signal without using MATLAB. Thus, I tried to implement open science values and tools that are also compatible with our matlab scripts. Feel free to contribute or indicate issues as we aim to buid from this structure and repository!   
 
 ## Project definition 
 
 Overall, my goal is to learn how to run a machine-learning classifier writen in MATLAB and to examine if it can predict a variable that is associated with the EEG-FFR signal (e.g. if the stimuli that generated the FFRs is a speech vs. piano sound, but it could be other variables cuch as if the participants are musicians vs. non-musicians, etc.). 
 
-I hope to run and put together beginner-friendly procedures that would make ML classification writen in MATLAB more accessible. As the equipment and hardware used to record FFRs can influence the quality of the signal, the scripts could also track the number of trials required for a significant classification. It would be useful to adjust research designs and target more feasable research questions. In addition to keeping track of the number of FFR trials, the instruction of the scripts would ideally make it more flexible for datasets of different dimensions. 
+I aimed to run and put together beginner-friendly procedures that would make ML classification written in MATLAB more accessible. As the equipment and hardware used to record FFRs can influence the quality of the signal, the scripts could also track the number of trials required for a significant classification. It would be useful to adjust research designs and target more feasable research questions. In addition to keeping track of the number of FFR trials, the instruction of the scripts would ideally make it more flexible for modifications, or to use with different datasets or variables. 
 
 ## ASSIGNMENT WEEK 3
 
