@@ -71,31 +71,55 @@ Fortunatly, machine-learning classifiers recently developed with speech-evoked n
   
 ### Data 
 
-The dataset for this tutorial project was previously published by Emily Coffey and colleagues from the Zatorre Lab at McGill University (see Coffey et al., 2017). It consists of a set of pre-processed EEG-FFR collected with 27 subjects (13 musicians and 13 non-musicians) and the auditory stimuli used during the data collection. Demographic and music experience information (collected with the Montreal Music History Questionnaire [Coffey et al., 2011]) will also be made available on OSF for futur analysis, but is not explored under the scope of this tutorial. Thus, the data under this project is limited to the auditory stimuli (.wav) and EEG-FFR (.eeg) files.
+The dataset for this tutorial project was previously published and generously provided by Emily Coffey and colleagues from the Zatorre Lab at McGill University (see Coffey et al., 2017). It consists of a set of pre-processed EEG-FFR collected with 27 subjects (13 musicians and 13 non-musicians) and the auditory stimuli used during the data collection. Demographic and music experience information (collected with the Montreal Music History Questionnaire [Coffey et al., 2011]) will also be made available on OSF for futur analysis, but is not explored under the scope of this tutorial. Thus, the data under this project is limited to the auditory stimuli (.wav) and EEG-FFR (.eeg) files. 
 
-The auditory stimuli used were a speech |dah| and a piano tone stimuli, with both a duration of 100ms and a fondamental frequency of 100 Hz. For more details on this dataset, please see [Cortical Correlates of the Auditory Frequency-Following and Onset Responses: EEG and fMRI Evidence](https://www.jneurosci.org/content/37/4/830)
+For more details on this dataset, please see [Cortical Correlates of the Auditory Frequency-Following and Onset Responses: EEG and fMRI Evidence](https://www.jneurosci.org/content/37/4/830). Questions can also be directed to emily.coffey@concordia.ca 
+
+#### 1) Stimuli
+The auditory stimuli used were a speech |dah| and a piano tone stimuli, with both a duration of 100ms and a fondamental frequency of 98 Hz. 
+
+### 2) EEG Data
+
+EEG data is provided from each subject separately as a MATLAB structure array with two fields: .eeg and .sti. 
+The name on the structure array represents the subject number (e.g. 001). The first field (e.g., 001.eeg) contains a * .mat 2-dimentional matrix with the EEG data. Rows and columns will correspond to single-stimulus trials and EEG data-points, respectively. 
+
+If you use this classifier with a different EEG-FFR dataset,  
+
+### 3) Important Data Information (Important to adjust so that the script always correspond to the dataset that is used)
+ 
+ a. __Pre-Stimulus Duration__: 50 ms
+ b. __Stimulus Duration__: 100 ms 
+ c. __Trial Duration__: 0.2228 seconds
+ _(Note from 1st author: "It is a funny number because I shifted the data to account for air conduction delay such that 0 (or 50 ms into the file) is when the sound hits the ear) - in any case there are 3650 data points at 16384 Hz.")_
+ 
+ d. __EEG Sample-Rate__: 16384 Hz
+ e. __Artifact Rejection Criteria (if any)__: None in the current pre-processed dataset. 
+  _(Note from 1st author: "In the data used for the Jounal of Neuroscience publication, a precedure based on similarity to the grand average was applied. It was less appropriate to use such a procedure here as it may mask some of the inter-individual differences we are interested in.)_    
+ f. __Electrodes used for re-referencing__: This was a simple Cz to linked mastoids montage, it's already been referenced.
 
 ### Deliverables
 
 At the end of this project, we will have:
- - The current markdown document, completed and revised.
- - Beginner-Friendly procedures to run a HMM, SVM and XCorr classifiers on FFR-EEG data
+ - The current README.md and documentation for a reproducible workflow
+ - Beginner-Friendly procedures to run a HMM on FFR-EEG data
+ - A Matlab Jupiter Notebook as tutorial for novice users
+ - Stand-alone versions of the scripts for advanced users
  - A section in the gallery of the BHS website about this project
-
-## Results 
-By the end of this project, I aim to be able to run classifiers on EEG-FFR and have a code structure that I will be able to reuse in the future. 
-
-### Progress overview
-
-After extensive research, I found and downloaded a pre-processed FFR dataset and classifiers scripts for an HMM, a SVM, a cross-correlation and a STLM classifiers for EEG-FFR. I obtained the author's permission, installed the gpu MATLAB Toolbox on my computer. I faced issues running the scripts locally on my computer and will need to run the classifiers on my Lab server. I am currently verifying the compatibility of jupyter notebooks with MATLAB. My next steps, are to run the classifiers, and if it works, to write detailled explanations for each steps in a parralel version of the scripts.   
-
-### Tools I learned during this project
-
-Hopefully the ones named above! (More details coming soon) 
+ - A EEG-FFR Dataset shared by the Zatorre Lab (McGill University) on OSF
+ - ML Scripts created by Fernando Llanos to built on in the futur (SVM, x-corr, and SLTM)
+ - MIT licenses and step to get open source licence with MATLAB script in the future
  
-### Results 
+### Progress at Week 2
 
-(More details coming soon) 
+After extensive research, I found and downloaded a pre-processed FFR dataset and classifiers scripts for an HMM, a SVM, a cross-correlation and a STLM classifiers for EEG-FFR. I obtained the author's permission, installed the gpu MATLAB Toolbox on my computer. I faced issues running the scripts locally on my computer and will need to run the classifiers on my Lab server. I am currently verifying the compatibility of jupyter notebooks with MATLAB. My next steps, are to run the classifiers, and if it works, to write detailled explanations for each steps in a parralel version of the scripts.
+
+## Results at Week 4  
+By the end of this project, I became able to run classifiers on EEG-FFR and have a structured workflow that I will be able to reuse in the future. I also have MIT licences & procedures for futur scripts, an archived EEG-FFR dataset on osf.oi, and got my lab more invades by open sciences practices
+
+### HMM Classification Result
+
+   
+ 
 
 #### Deliverable 1: A Project Report 
 
