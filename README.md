@@ -13,7 +13,7 @@
 -Brainhack School Instructors: Pierre Bellec, Tristan Glatard, Yann Harel (BHS Montreal 2020)
 
 
-# ASSIGNMENT WEEK 3: Video Presentation Introducing this Project
+# ASSIGNMENT WEEK 3: Project Video Presentation
 
 [Check the video description of my project on Youtube!](https://www.youtube.com/watch?v=6lX_-AgOXug) 
 
