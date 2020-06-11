@@ -1,6 +1,6 @@
 # Learning How to Run a EEG-FFR Classifiers in MATLAB   
  
-## Project for the BrainHack School Montreal 2020
+#### Project Developped by Isabelle Arseneau-Bruneau as part of the BrainHack School Montreal 2020
 
 ![Project Description](/images/Video_Presentation.png)
 
