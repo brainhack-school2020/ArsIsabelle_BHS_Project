@@ -2,6 +2,16 @@
  
 ## Developped through the BrainHack School Montreal 2020
 
+# ASSIGNMENT WEEK 3: Video Presentation of the Project
+
+![Project Description](/images/Screen Shot 2020-06-11 at 3.34.39 PM.png)
+
+[Video Description of my Project Here!](https://www.youtube.com/watch?v=6lX_-AgOXug) 
+
+## Summary 
+
+This project is a tutorial. It aims for you to learn how to use a machine-learning classifier (the Hidden Markov Model) in MATLAB with an auditory neural signal called the Frequency Following Responses (FFRs). The FFR is an electrophysiological measure, recorded on the scalp with EEG or MEG, that provide a representation of how well the brain encode complex sounds (e.g. speech or music). It informs us on how individual encode and process sounds such as speech or music. It is a fascinating neurological measure, but the analysis techniques are not always the most accessible. 
+
 ## Contributors 
 
 -Project Developed and implemented by Isabelle Arseneau-Bruneau (McGill University)
@@ -11,15 +21,6 @@
 -Dataset Provided by Emily B. J. Coffey, Ph.D. (Concordia University)
 
 -Brainhack School Instructors: Pierre Bellec, Tristan Glatard, Yann Harel (BHS Montreal 2020)
-
-
-# ASSIGNMENT WEEK 3: Project Video Presentation
-
-[Check the video description of my project on Youtube!](https://www.youtube.com/watch?v=6lX_-AgOXug) 
-
-## Summary 
-
-This project is a tutorial. It aims for you to learn how to use a machine-learning classifier (the Hidden Markov Model) in MATLAB with an auditory neural signal called the Frequency Following Responses (FFRs). The FFR is an electrophysiological measure, recorded on the scalp with EEG or MEG, that provide a representation of how well the brain encode complex sounds (e.g. speech or music). It informs us on how individual encode and process sounds such as speech or music. It is a fascinating neurological measure, but the analysis techniques are not always the most accessible. 
 
 ## Project Definition
 
