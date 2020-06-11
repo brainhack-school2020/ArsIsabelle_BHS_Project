@@ -37,9 +37,6 @@ As the equipment used to collect FFRs and population targeted can influence the 
 
 # Background Information on the FFR
 
-Frequency Following Responses Features, Procedures, and Machine-Learning Analysis (figure from Coffey et al., 2019, with permission)
-![The Frequency Following Response and Machine-Learning](/images/Coffey_Evolv_FFR.webp)
-
 Over the last decades, neuroimaging studies have provided cumulative evidence of the benefits of musical training, in particular how such training promotes neuroplasticity (Herholz et al. 2012). A clear benefit of musical training is manifested at the level of the frequency following response (FFR), an electrical potential sensitive to phase-locking captured by EEG that arises from subcortical and cortical sources (Coffey et al., 2016). The FFR is an extremely rapid (starting at 7 ms) reaction of the brain to an auditory stimulus. It is a neural representation of the periodicity of the entering auditory information and allow us to recognize speech or music sounds (Coffey et al., 20161; Kraus et al., 2010; 2014; 2017b; 2017c). With both cortical and subcortical contributors that modify its quality (Coffey, Herholz, Chepesiuk, Baillet, & Zatorre, 2016), the FFR represents an integrated response of the entire auditory system (Irvine et al., 2018).  
 
 Interestingly, the FFR varies in individuals as a function of experience (enhanced in musicians, tonal language speakers, bilinguals [Coffey et al., 2016; Kraus & Chandrasekaran, 2010; Krizman, Marian, Shook, Skoe, & Kraus, 2012]) or pathologies (decreased in autism, dyslexia, traumatic brain injuries [Hornickel & Kraus, 2013;  Nina Kraus et al., 2016;, for extensive literature survey, see Kraus et al., 2017]. Several authors have thus proposed that it may serve as an auditory biomarker to target treatments and educational interventions (Kraus et al., 2015; Bidelman et al., 2017). Musicians are of particular interest because of correlations between the augmentation of their FFR quality and enhancements in their perception skills (Coffey et al., 2016; Kraus & Chandraserakan, 2010). The greater the musical training, the closer the neuronal representation approaches its corresponding auditory stimuli (Kraus et al., 2010b, 2015, 2017). The signal is transmitted faster, and becomes more precise and robust, which then benefits higher-order cognitive functions (Coffey et al., 2016; Kraus, Anderson, White-Schwoch, Fay, & Popper, 2017). This is a remarkable phenomenon, but how these enhancements are achieved remains unclear. 
@@ -47,6 +44,11 @@ Interestingly, the FFR varies in individuals as a function of experience (enhanc
 A considerable challenge for the understanding of FFR enhancements mechanisms is the very small amplitude (measured in nanovolt) and the bad signal-to-noise ratio (SNR) of the neural signal. Hence, recording FFRs typically requires several thousand exposures to the same auditory stimulus (which are averaged to cancel out the noise). These constaints considerably limited the research questions that could be expored with FFRs, while this signal would remain a key component of the plasticity mechanisms associated with musical training. 
 
 Fortunatly, machine-learning classifiers recently developed with speech-evoked neurophysiological responses have considerably reduced the number of trials necessary to obtain a usable FFR signal (Xie et al., 2019). The classification of FFR is starting to emmerge as an objective mean to assess auditory perception (Holdgraf et al., 2017; Llanos et al., 2019). The current BHS project aims to run one of these classifiers, which I also use in my doctoral research, on FFR-EEG data. I hope to implement these procedures in a way that will facilitate access, collaborations and open science.  
+
+The Frequency Following Responses: Procedures (a), Features (b-d) and Machine-Learning Analysis (e)
+Figure from [Coffey et al., 2019](https://www-nature-com.proxy3.library.mcgill.ca/articles/s41467-019-13003-w), with permission) 
+![The Frequency Following Response and Machine-Learning](/images/Coffey_Evolv_FFR.webp)
+
 
 ## Tools I used
 
