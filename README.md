@@ -78,6 +78,8 @@ For more details on this dataset, please see [Cortical Correlates of the Auditor
 #### 1) Stimuli
 The auditory stimuli used were a speech |dah| and a piano tone stimuli, with both a duration of 100ms and a fondamental frequency of 98 Hz. 
 
+![100ms 'da' syllable-stimuli and piano tone-stimuli waveform_downsampled at 16384Hz](/images/logo.png)
+
 ### 2) EEG Data
 
 EEG data is provided from each subject separately as a MATLAB structure array with two fields: .eeg and .sti. 
@@ -87,15 +89,19 @@ If you use this classifier with a different EEG-FFR dataset,
 
 ### 3) Important Data Information (Important to adjust so that the script always correspond to the dataset that is used)
 
- l. __Pre-Stimulus Duration__: 50 ms/
- l. __Stimulus Duration__: 100 ms/ 
- l. __Trial Duration__: 0.2228 seconds/
- _(Note from 1st author: "It is a funny number because I shifted the data to account for air conduction delay such that 0 (or 50 ms into the file) is when the sound hits the ear) - in any case there are 3650 data points at 16384 Hz.")_
+* __Pre-Stimulus Duration__: 50 ms
+* __Stimulus Duration__: 100 ms 
+* __Trial Duration__: 0.2228 seconds
+_(Note from 1st author: "It is a funny number because I shifted the data to account for air conduction delay such that 0 (or 50 ms into the file) is when the sound hits the ear) - in any case there are 3650 data points at 16384 Hz.")_
  
- l. __EEG Sample-Rate__: 16384 Hz/
- l. __Artifact Rejection Criteria (if any)__: None in the current pre-processed dataset./ 
+ * __EEG Sample-Rate__: 16384 Hz
+ * __Artifact Rejection Criteria (if any)__: None in the current pre-processed dataset 
  _(Note from 1st author: "In the data used for the Jounal of Neuroscience publication, a precedure based on similarity to the grand average was applied. It was less appropriate to use such a procedure here as it may mask some of the inter-individual differences we are interested in.)_/   
- l. __Electrodes used for re-referencing__: This was a simple Cz to linked mastoids montage, it's already been referenced.
+* __Electrodes used for re-referencing__: This was a simple Cz to linked mastoids montage, it's already been referenced.
+
+Here is what a grand average of the stimuli looks like:
+
+![100ms 'da' syllable-FFR and piano tone-FFR (_N=27)_](/images/logo.png)
 
 ### Deliverables
 
