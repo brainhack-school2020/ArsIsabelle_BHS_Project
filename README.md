@@ -87,14 +87,14 @@ If you use this classifier with a different EEG-FFR dataset,
 
 ### 3) Important Data Information (Important to adjust so that the script always correspond to the dataset that is used)
  
- a. __Pre-Stimulus Duration__: 50 ms
- b. __Stimulus Duration__: 100 ms 
- c. __Trial Duration__: 0.2228 seconds
+ a. __Pre-Stimulus Duration__: 50 ms \
+ b. __Stimulus Duration__: 100 ms \ 
+ c. __Trial Duration__: 0.2228 seconds \
  _(Note from 1st author: "It is a funny number because I shifted the data to account for air conduction delay such that 0 (or 50 ms into the file) is when the sound hits the ear) - in any case there are 3650 data points at 16384 Hz.")_
  
- d. __EEG Sample-Rate__: 16384 Hz
- e. __Artifact Rejection Criteria (if any)__: None in the current pre-processed dataset. 
-  _(Note from 1st author: "In the data used for the Jounal of Neuroscience publication, a precedure based on similarity to the grand average was applied. It was less appropriate to use such a procedure here as it may mask some of the inter-individual differences we are interested in.)_    
+ d. __EEG Sample-Rate__: 16384 Hz \
+ e. __Artifact Rejection Criteria (if any)__: None in the current pre-processed dataset. \ 
+  _(Note from 1st author: "In the data used for the Jounal of Neuroscience publication, a precedure based on similarity to the grand average was applied. It was less appropriate to use such a procedure here as it may mask some of the inter-individual differences we are interested in.)_ \   
  f. __Electrodes used for re-referencing__: This was a simple Cz to linked mastoids montage, it's already been referenced.
 
 ### Deliverables
