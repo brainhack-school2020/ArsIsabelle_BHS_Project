@@ -45,9 +45,10 @@ A considerable challenge for the understanding of FFR enhancements mechanisms is
 
 Fortunatly, machine-learning classifiers recently developed with speech-evoked neurophysiological responses have considerably reduced the number of trials necessary to obtain a usable FFR signal (Xie et al., 2019). The classification of FFR is starting to emmerge as an objective mean to assess auditory perception (Holdgraf et al., 2017; Llanos et al., 2019). The current BHS project aims to run one of these classifiers, which I also use in my doctoral research, on FFR-EEG data. I hope to implement these procedures in a way that will facilitate access, collaborations and open science.  
 
-The Frequency Following Responses: Procedures (a), Features (b-d) and Machine-Learning Analysis (e)
+#### The Frequency Following Responses: Procedures (a), Features (b-d) and Machine-Learning Analysis (e)
 
-Figure from [Coffey et al., 2019](https://www-nature-com.proxy3.library.mcgill.ca/articles/s41467-019-13003-w), with permission) 
+_Figure from [Coffey et al., 2019](https://www-nature-com.proxy3.library.mcgill.ca/articles/s41467-019-13003-w), with permission)_
+
 ![The Frequency Following Response and Machine-Learning](/images/Coffey_Evolv_FFR.webp)
 
 
