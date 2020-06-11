@@ -27,7 +27,7 @@ This tutorial first aim is to provide a reproducible workflow, that is beginner-
 
 ### Notes on Open Science Practices and Matlab
 
-Is it mandatory to abandon MATLAB to have open science practices? Matlab may be a commercial software, but it would be sad to limit the open science movement to open source software users. Specialized fields, such as FFR research, have the wide majority of their resources, expertise, and tools in matlab. Thus, at the current moment, it would be extremely difficult to study FFR without using MATLAB. Nevertheless, there are many open science tools that are compatible with matlab scripts and files. Hence, I tried to implement an open approach in this ML tutorial. Feel free to contribute to it or indicate issues. We aim to buid from this structure and repository!   
+Is it mandatory to abandon MATLAB to have open science practices? Matlab may be a commercial software, but it would be sad to limit the open science movement to open source software users. Specialized fields, such as FFR research, have the wide majority of their resources, expertise, and tools in matlab. Thus, at the current moment, it would be extremely difficult to study FFR without using MATLAB. Nevertheless, there are many open science tools that are compatible with matlab scripts and files. Hence, I tried to implement an open approach in this ML tutorial. Feel free to contribute to it or indicate issues. We aim to buid from this structure and repository! http://addgithublinkrighthere.com  
 
 ## Hidden Markov Model: Classification Goal of this Tutorial: 
 
