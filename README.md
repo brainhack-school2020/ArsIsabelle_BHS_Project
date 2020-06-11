@@ -36,7 +36,7 @@ As the equipment used to collect FFRs and population targeted can influence the 
 
 ### Background Information on the FFR
 
-![The Frequency Following Response and Machine-Learning](https://www-nature-com.proxy3.library.mcgill.ca/articles/s41467-019-13003-w/figures/1)
+![The Frequency Following Response and Machine-Learning](/images/Coffey_Evolv_FFR.webp)
 
 Over the last decades, neuroimaging studies have provided cumulative evidence of the benefits of musical training, in particular how such training promotes neuroplasticity (Herholz et al. 2012). A clear benefit of musical training is manifested at the level of the frequency following response (FFR), an electrical potential sensitive to phase-locking captured by EEG that arises from subcortical and cortical sources (Coffey et al., 2016). The FFR is an extremely rapid (starting at 7 ms) reaction of the brain to an auditory stimulus. It is a neural representation of the periodicity of the entering auditory information and allow us to recognize speech or music sounds (Coffey et al., 20161; Kraus et al., 2010; 2014; 2017b; 2017c). With both cortical and subcortical contributors that modify its quality (Coffey, Herholz, Chepesiuk, Baillet, & Zatorre, 2016), the FFR represents an integrated response of the entire auditory system (Irvine et al., 2018).  
 
@@ -78,7 +78,7 @@ For more details on this dataset, please see [Cortical Correlates of the Auditor
 #### 1) Stimuli
 The auditory stimuli used were a speech |dah| and a piano tone stimuli, with both a duration of 100ms and a fondamental frequency of 98 Hz. 
 
-![100ms 'da' syllable-stimuli and piano tone-stimuli waveform_downsampled at 16384Hz](/images/logo.png)
+![100ms 'da' syllable-stimuli and piano tone-stimuli waveform_downsampled at 16384Hz](/images/BHS_Tutorial_Stimuli.png)
 
 ### 2) EEG Data
 
@@ -101,7 +101,7 @@ _(Note from 1st author: "It is a funny number because I shifted the data to acco
 
 Here is what a grand average of the stimuli looks like:
 
-![100ms 'da' syllable-FFR and piano tone-FFR (_N=27)_](/images/logo.png)
+![100ms 'da' syllable-FFR and piano tone-FFR (_N=27)_](/images/BHS_Tutorial_FFR_GrandAverage.png)
 
 ### Deliverables
 
