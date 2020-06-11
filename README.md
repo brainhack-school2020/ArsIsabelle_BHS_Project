@@ -1,4 +1,4 @@
-# Learning How to Run a EEG-FFR Classifiers in MATLAB   
+# Learning How to Run a EEG-FFR Classifier in MATLAB   
  
 #### Project Developped by Isabelle Arseneau-Bruneau as part of the BrainHack School Montreal 2020
 
