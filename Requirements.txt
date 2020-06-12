@@ -1,1 +1,29 @@
-To Be completed
+MAKE SURE TO REED THIS DOCUMENT BEFORE ATTEMPTING TO RUN THE CLASSIFIERS
+
+SOFTWARE REQUIREMENTS:
+The Machine-Learning classifiers shared on this repository were used on MATLAB_R2017a and MATLAB_R2018a. 
+They may work with later MATLAB versions but have not been tested. 
+
+TOOLBOXES REQUIRED:
+-GPU MATLAB Toolboxe
+-Bioinformatics MATLAB Toolboxe
+
+You have to options to use these scripts: 
+1) With the Jupyter Notebook (Script contains explaination about the commands and model)
+2) Directly in Matlab with a PDF of the instructions (Script are short and sweet, get the job done!) 
+
+IMPORTANT CONSIDERATION: 
+The virtual environment necessary to run matlab scripts in jupyter notebooks requires configuration with "root" or "admin" access.
+If you aim to use the Jupyter Notebook provided in this Git Hub repository to run the scripts, make sure that MATLAB is installed ON YOUR LOCAL COMPUTER (and not accessed to a server remotly). On a shared server, e.g. laboratory servers, you might be denied access to the directory where you need to go to configure the kernel. It is not impossible to do, but you will need the assistance of the server's administrator. Thus...
+
+... If your only access to MATLAB is through a shared/institutional serer, we recommand using the stand-alone scripts. 
+... If you have MATLAB installed on you local computer and want to improve your skills, give a try to the notebook!    
+
+STAND-ALONE SCRIPTS:
+If you can't/don't want to use the jupyter notebook, you can run the classifiers scripts directly in MATLAB. Make sure to download the whole folder called 'Classifiers' to preserve the structure of the scripts and functions. On your local computer terminal, go to the directory where you downloded the classifiers' folder and start MATLAB. Make sure to follow the steps provided in the file "Instructions_SA_Scripts" for instructions on the Machine-Learning Procedures.     
+
+JUPYTER NOTEBOOK:
+The Jupyter Notebook requires the installation of a MATLAB kernel. Make sure to follow truly the instructions described on this page:
+https://am111.readthedocs.io/en/latest/jmatlab_install.html 
+
+You may also find the instructions on the following Git Repository: https://github.com/JiaweiZhuang/AM111/blob/master/docs/jmatlab_install.ipynb
