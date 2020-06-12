@@ -8,7 +8,7 @@ TOOLBOXES REQUIRED:
 -GPU MATLAB Toolboxe
 -Bioinformatics MATLAB Toolboxe
 
-You have to options to use these scripts: 
+You have TWO options to use the ML scripts: 
 1) With the Jupyter Notebook (Script contains explaination about the commands and model)
 2) Directly in Matlab with a PDF of the instructions (Script are short and sweet, get the job done!) 
 
