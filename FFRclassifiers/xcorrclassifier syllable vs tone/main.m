@@ -6,7 +6,7 @@
 
     p = gcp('nocreate');
     if isempty(p)
-    parpool(3);                                                               
+    parpool(2);                                                               
     end
     
     delete('results/*.mat')
