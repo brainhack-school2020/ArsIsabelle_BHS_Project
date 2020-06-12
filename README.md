@@ -111,12 +111,12 @@ Here is what a grand average of the stimuli looks like:
 
 # Results 
 
-## Progress Overwiew
+## Progress Overview
 
 ### Progress at Week 2
 After extensive research, I obtained and downloaded a pre-processed FFR dataset from EBJC and classifiers scripts from FL for an HMM, a SVM, a cross-correlation and a STLM classifiers adjusted for EEG-FFR. I obtained the author's permissions to share this content, installed the gpu MATLAB Toolbox on my computer. However, I faced issues running the scripts locally and decided to try to run the classifiers on my Lab server. At that moment, I was verifying the compatibility of jupyter notebooks with MATLAB. My next steps, were to run the classifiers, and if it worked, to write detailled explanations for each steps in a parralel version of the scripts.
 
-## Results at Week 4  
+### Results at Week 4  
 Although it was quicker to run the scripts on the lab server, I faced challenges with the jupyter notebook as it required configuration to which I did not have access to on the server. I realized that I missed elements to have a reproducible workflow so I decided to adapt to tutorial in orger to have all this information. By the end of this project, I became able to run classifiers on EEG-FFR and have a structured workflow that I will be able to reuse in the future. I also have MIT licences & procedures for futur scripts, an archived EEG-FFR dataset on osf.oi, and got my lab more invades by open sciences practices
 
 ## HMM Classification Result
