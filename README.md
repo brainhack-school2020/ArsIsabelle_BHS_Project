@@ -24,9 +24,13 @@ This project is a tutorial. It aims for you to learn how to use a machine-learni
 
 This tutorial first aim is to provide a reproducible workflow, that is beginner-friendly, with machine-learning (ML) procedures written in MATLAB. As I am novice with coding, I aim to implement a classifier that I use repetively in my doctoral research (an Hidden Markov Model [HMM]) into a structure that would provide some flexibility for future usages (with other variables or datasets), and would allow to build extensions (e.g. for other classifiers such as a Support Vector Machine (SVM), Cross-correlation (XCorr), LSTM). I aim to put together a set of resources that would be accessible to my research assistants, collaborators (who also have students to train on these ML procedures), other FFR researchers, and my futur self! Thus, the data of this tutorial will be in format that align with components of standards in project management (EEG-BIDS), use jupyter notebooks implemented in a virtual environement (allowing the use MATLAB scripts), and use basic matlab vizualization tools to generate figures of the results. 
 
-### Notes on Open Science Practices and Matlab
+### Instructions
 
-Is it mandatory to abandon MATLAB to have open science practices? Matlab may be a commercial software, but it would be sad to limit the open science movement to open source software users. Specialized fields, such as FFR research, have the wide majority of their resources, expertise, and tools in matlab. Thus, at the current moment, it would be extremely difficult to study FFR without using MATLAB. Nevertheless, there are many open science tools that are compatible with matlab scripts and files. Hence, I tried to implement an open approach in this ML tutorial. Feel free to contribute to it or indicate issues. We aim to buid from this structure and repository! http://addgithublinkrighthere.com  
+To get started with the ML procedures and the tutorial, make sure to read the "Requirements.txt" file, follow the instructions on the "Setup.txt" file. If you chose to run the scripts directly in Matlab, follow the procedures in "Instructions_SA_Scripts". If you chose the tutorial (jupyter notebook), [clone this git repository to your local machine](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). Open the terminal of your local computer and go to the directory in which you cloned this git repo. enter the command 'jupyter notebook Tutorial_Introduction.ipynb' . Once completed, enter the command 'ctrl + c' in your terminal to quit the notebook. Then, enter the command 'jupyter notebook Matlab_HMM_Scripts_Notebook.ipynb' and follow the instructions. As this notebook is cloned on your local machine, do not hesitate to take notes directly on it and save them so you can access them later from your local directory. Happy machine-learning!          
+
+_### Notes on Open Science Practices and Matlab_
+
+_Is it mandatory to abandon MATLAB to have open science practices? Matlab may be a commercial software, but it would be sad to limit the open science movement to open source software users. Specialized fields, such as FFR research, have the wide majority of their resources, expertise, and tools in matlab. Thus, at the current moment, it would be extremely difficult to study FFR without using MATLAB. Nevertheless, there are many open science tools that are compatible with matlab scripts and files. Hence, I tried to implement an open approach in this ML tutorial. Feel free to contribute to it or indicate issues. We aim to buid from this structure and repository!_ http://addgithublinkrighthere.com  
 
 ### Hidden Markov Model - Classification Goal: 
 
@@ -34,7 +38,7 @@ The machine-learning classifier targeted in this tutorial, the Hidden Markov Mod
 
 As the equipment used to collect FFRs and population targeted can influence the quality of the signal, this script also __tracks the number of FFR trials__ required to obtain certain levels of __decoding accuracy__. This information is useful to validate experimental procedures, adjust research designs and target research questions. As enhanced FFR reproduces features of the stimuli with more fidelity, the decoding accuracy of the classifier can also be __used as a dependant measure__ to reveal experience-dependant effect in certain populations (Llanos et al., 2017; 2019). 
 
-# Background Information
+# Background Information on FFR 
 
 Over the last decades, neuroimaging studies have provided cumulative evidence of the benefits of musical training, in particular how such training promotes neuroplasticity (Herholz et al. 2012). A clear benefit of musical training is manifested at the level of the frequency following response (FFR), an electrical potential sensitive to phase-locking captured by EEG that arises from subcortical and cortical sources (Coffey et al., 2016). The FFR is an extremely rapid (starting at 7 ms) reaction of the brain to an auditory stimulus. It is a neural representation of the periodicity of the entering auditory information and allow us to recognize speech or music sounds (Coffey et al., 20161; Kraus et al., 2010; 2014; 2017b; 2017c). With both cortical and subcortical contributors that modify its quality (Coffey, Herholz, Chepesiuk, Baillet, & Zatorre, 2016), the FFR represents an integrated response of the entire auditory system (Irvine et al., 2018).  
 
@@ -153,3 +157,20 @@ Through this project, the Brainhack School provided tools and guidance that allo
 I would like to acknowledge the assistance (and patience!) of Pierre Bellec, Tristan Glatard, and Yann Harel as my Individual Instructors at the Brainhack School Montréal 2020 and the extremely generous contributions of my collaborators Fernando Llanos (for the classifiers original scripts), Emily Coffey (for providing the dataset), and Marcel Farres Franch (for regular rescues and technological assistance). 
 
 ## References 
+Coffey, E. B. J., Herholz, S. C., Chepesiuk, A. M. P., Baillet, S., & Zatorre, R. J. (2016). Cortical contributions to the auditory frequency-following response revealed by MEG. Nature Communications, 7, 11070. https://doi.org/10.1038/ncomms11070
+
+Coffey, E. B. J., Musacchia, G., & Zatorre, R. J. (2016). Cortical correlates of the auditory frequency-following and onset responses: EEG and fMRI evidence. Journal of Neuroscience, 1265–16. https://doi.org/10.1523/JNEUROSCI.1265-16.2016
+
+Coffey, E. B. J., Nicol, T., White-Schwoch, T., Chandrasekaran, B., Krizman, J., Skoe, E., Zatorre, R. J., & Kraus, N. (2019). Evolving perspectives on the sources of the frequency-following response. Nature Communications, 10(1), 5036. https://doi.org/10.1038/s41467-019-13003-w
+
+Herholz, S. C., & Zatorre, R. J. (2012). Musical Training as a Framework for Brain Plasticity: Behavior, Function, and Structure. Neuron, 76(3), 486–502. https://doi.org/10.1016/j.neuron.2012.10.011
+
+Holdgraf, C. R., Rieger, J. W., Micheli, C., Martin, S., Knight, R. T., & Theunissen, F. E. (2017). Encoding and Decoding Models in Cognitive Electrophysiology. Frontiers in Systems Neuroscience, 11. https://doi.org/10.3389/fnsys.2017.00061
+
+Llanos, F., Xie, Z., & Chandrasekaran, B. (2019). Biometric identification of listener identity from frequency following responses to speech. Journal of Neural Engineering, 16(5), 056004. https://doi.org/10.1088/1741-2552/ab1e01
+
+Llanos, F., Xie, Z., & Chandrasekaran, B. (2017). Hidden Markov modeling of frequency-following responses to Mandarin lexical tones. Journal of Neuroscience Methods, 291, 101–112. https://doi.org/10.1016/j.jneumeth.2017.08.010
+
+Xie Z., Reetzke, R., & Chandrasekaran, B. (2019). Machine Learning Approaches to Analyze Speech-Evoked Neurophysiological Responses. Journal of Speech, Language & Hearing Research, 62(3), 587–601. https://doi.org/10.1044/2018_JSLHR-S-ASTM-18-0244
+
+Yi, H. G., Xie, Z., Reetzke, R., Dimakis, A. G., & Chandrasekaran, B. (2017). Vowel decoding from single-trial speech-evoked electrophysiological responses: A feature-based machine learning approach. Brain and Behavior, 7(6), e00665. https://doi.org/10.1002/brb3.665
