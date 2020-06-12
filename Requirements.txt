@@ -26,4 +26,4 @@ JUPYTER NOTEBOOK:
 The Jupyter Notebook requires the installation of a MATLAB kernel. Make sure to follow truly the instructions described on this page:
 https://am111.readthedocs.io/en/latest/jmatlab_install.html 
 
-You may also find the instructions on the following Git Repository: https://github.com/JiaweiZhuang/AM111/blob/master/docs/jmatlab_install.ipynb
+You may also find the instructions on the following Git Repository: https://github.com/arsisabelle/AM111/blob/master/docs/jmatlab_install.ipynb
