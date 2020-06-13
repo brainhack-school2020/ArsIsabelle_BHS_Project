@@ -1,4 +1,4 @@
-# Learning How to Run a EEG-FFR Classifier in MATLAB   
+# EEG-FFR Classification in MATLAB: A Tutorial   
  
 #### Project Developped by Isabelle Arseneau-Bruneau as part of the BrainHack School Montreal 2020
 
@@ -111,13 +111,8 @@ Here is what a grand average of the FFR looks like:
 
 # Results 
 
-## Progress Overview
-
-### Progress at Week 2
-After extensive research, I obtained and downloaded a pre-processed FFR dataset from EBJC and classifiers scripts from FL for an HMM, a SVM, a cross-correlation and a STLM classifiers adjusted for EEG-FFR. I obtained the author's permissions to share this content, installed the gpu MATLAB Toolbox on my computer. However, I faced issues running the scripts locally and decided to try to run the classifiers on my Lab server. At that moment, I was verifying the compatibility of jupyter notebooks with MATLAB. My next steps, were to run the classifiers, and if it worked, to write detailled explanations for each steps in a parralel version of the scripts.
-
-### Results at Week 4  
-Although it was quicker to run the scripts on the lab server, I faced challenges with the jupyter notebook as it required configuration to which I did not have access to on the server. I realized that I missed elements to have a reproducible workflow so I decided to adapt to tutorial in orger to have all this information. By the end of this project, I became able to run classifiers on EEG-FFR and have a structured workflow that I will be able to reuse in the future. I also have MIT licences & procedures for futur scripts, an archived EEG-FFR dataset on osf.oi, and got my lab more invades by open sciences practices
+## Progress Overview (at Week 4)  
+I faced a few challenges with the matlab jupyter notebook as it required extra installation and set-up that needed to be addressed to access the tutorial. I realized that I missed elements to have a more reproducible workflow so I decided to adapt to tutorial accordingly. I found myself with a lot more text than I would have thought for something beginner friendly! However, by the end of this project, I became able to run classifiers on EEG-FFR and have a structure for the scripts and  workflow documentation that I will be able to reuse in the future. I must say that there is a considerable amount of revisions needed in my HMM Notebook and on the overall documentation for this tutorial to be beginner friendly. I actually ended up making a notebook with a tutorial on how to use the tools of this tutorial!! There is also a lot of text epuration that I need to do, and the scripts needs a bit of modification (for the subjects selection, in order to be able to reproduce all the figures). In order to be usable with other datasets, the script setup.m still require more comments and annotations). I also have MIT licences that needs to be extended & procedures for futur scripts that needs to be archived. Nevertheless, the EEG-FFR dataset is achived on osf.oi and I feel that I got my lab more invaded by open sciences practices. So at this point, the seeds are at least planted and I hope that this project, even if in arougher shape right now, will grow from there!
 
 ## HMM Classification Results
 
@@ -136,20 +131,19 @@ All the tools mentionned in the section "Tools I Used"!
 ## Course Deliverables
 
 #### ASSIGNMENT WEEK 1: [P-Hacking Exercise](https://github.com/arsisabelle/Arseneau-Bruneau-I-QLSC612)
-#### ASSIGNMENT WEEK 2: [README.md File](https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project/edit/master/README.md) + Issues
+#### ASSIGNMENT WEEK 2: [README.md File](https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project/blob/master/README.md) + Issues
 #### ASSIGNMENT WEEK 3: [Video Presentation of the Project](https://www.youtube.com/watch?v=6lX_-AgOXug) 
 #### ASSIGNMENT WEEK 4: [Project Repository](https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project) 
 
 ## Project Deliverables
  
- - [Project in the Gallery of the BHS website](ADD IT HERE!!!)
- - Project Report ( [README.md File](https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project/edit/master/README.md) )
+ - [Project in the Gallery of the BHS website](https://school.brainhackmtl.org/project/EEG-FFR-Classification)
+ - Project Report ([README.md File](https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project/edit/master/README.md))
  
  - [Video Introduction on this project](https://www.youtube.com/watch?v=6lX_-AgOXug) 
  - Documentation for a reproducible ML workflow 
- - Commands to run a HMM on FFR-EEG data
  - [Tutorial Introduction Jupyter Notebook (beginner-friendly)](https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project/blob/master/Tutorial_Introduction.ipynb)
- - [Matlab Notebook HMM tutorial](https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project/blob/master/Matlab_HMM_Scripts_Notebook.ipynb) (beginner-friendly)
+ - [Tutorial HMM in Matlab Jupyter Notebook](https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project/blob/master/Matlab_HMM_Scripts_Notebook.ipynb) (beginner-friendly)
  - Stand-alone versions of the [classifiers scripts](https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project/tree/master/FFRclassifiers) for advanced users 
  - [EEG-FFR Dataset shared by the Zatorre Lab (McGill University) on OSF.oi](https://osf.io/c2b3t/?view_only=d1b30d4e0e7c4d53a8ec80d4d87b33d2)
  - Supplementary ML Scripts (SVM, x-corr, and SLTM) created by Fernando Llanos  
@@ -165,10 +159,13 @@ All the tools mentionned in the section "Tools I Used"!
 * Cutting excedentary text
 * Extensive proof reading for typos
 * Proof reading by a novice learner to identify terms to explain 
+* Uploading the Licencins procedure for future scripts & tutorials
+
+![Many seeds are planted!](/images/Growing_Plant.jpeg)
  
 ## Conclusion 
 
-Through this project, the Brainhack School provided tools and guidance that allowed me to tame the aspects of my doctoral research that I feared the most (programmation, machine-learning, neural signal analysis)! I still have a lot to learn, but I now feel that with the jupyter notebook tutorial, with organized documentation to reproduce the workflow, and an extendable structure for the scripts, I have many elements in place to continue to learn and to share with other. Many seeds are planted, I just need to keep growing! As a matter of fact, the structure generated by this project will serve to integrate other classifiers that my research team will use. Thus it does not finish with the BHS. With an Open Science approach, I found practices in academia that resonnate much more with values that I aim to encourage; accessibility being at the core of these. (Perhaps, did I become a little less cynical?) Even if we remain only practical, the tools developped through this project will be tremendously useful for my work at the lab, will facilitate exchanges with current and future collaborators, which hopefully will increase the impact of my research. In the very least, I can now direct colleagues and students to online-resources when they ask about the analysis techniques used in my current research. 
+Through this project, the Brainhack School provided tools and guidance that allowed me to tame the aspects of my doctoral research that I feared the most (programmation, machine-learning, neural signal analysis)! I still have a lot to learn, but I now feel that with the jupyter notebook tutorial, with organized documentation to reproduce the workflow, and an extendable structure for the scripts, I have many elements in place to continue to learn and to share with other. Many seeds are planted, I just need to keep growing! As a matter of fact, the structure generated by this project will serve to integrate other classifiers that my research team will use. Thus it does not finish with the BHS. With an Open Science approach, I found practices in academia that resonnate much more with values that I aim to encourage; accessibility being at the core of these. (Perhaps, did I become a little less cynical?) Even if we remain only practical, the tools developped through this project will be tremendously useful for my work at the lab, will facilitate exchanges with current and future collaborators, which hopefully will increase the impact of my research. In the very least, I will be able to direct colleagues and students to online-resources when they ask about the analysis techniques used in my current research. 
 
 ## Acknowledgement
 
