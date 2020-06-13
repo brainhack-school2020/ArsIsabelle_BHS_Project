@@ -26,11 +26,11 @@ This tutorial first aim is to provide a reproducible workflow, that is beginner-
 
 ### Instructions
 
-To get started with the ML procedures and the tutorial, make sure to read the "Requirements.txt" file, follow the instructions on the "Setup.txt" file. If you chose to run the scripts directly in Matlab, follow the procedures in "Instructions_SA_Scripts". If you chose the tutorial (jupyter notebook), clone this git repository to your local machine. [This video can help you navigate these procedures](https://www.youtube.com/watch?v=FsMZ40jL4uQ). Then, open the terminal of your local computer and go to the directory in which you cloned this git repo. enter the command 'jupyter notebook Tutorial_Introduction.ipynb' . Once completed, enter the command 'ctrl + c' in your terminal to quit the notebook. Then, enter the command 'jupyter notebook Matlab_HMM_Scripts_Notebook.ipynb' and follow the instructions. As this notebook is cloned on your local machine, do not hesitate to take notes directly on it and save them so you can access them later from your local directory. Happy machine-learning!          
+To get started with the ML procedures and the tutorial, make sure to read the "Requirements.txt" file and follow the instructions on the "Setup.md" file. If you chose to run the scripts directly in Matlab, follow the procedures in "Workflow". If you chose the tutorial (jupyter notebook), clone this git repository to your local machine. [This video can help you navigate these procedures](https://www.youtube.com/watch?v=FsMZ40jL4uQ). Then, open the terminal of your local computer and go to the directory in which you cloned this git repo. enter the command 'jupyter notebook Tutorial_Introduction.ipynb' . Once completed, enter the command 'ctrl + c' in your terminal to quit the notebook. Then, enter the command 'jupyter notebook Matlab_HMM_Scripts_Notebook.ipynb' and follow the instructions. As this notebook is cloned on your local machine, do not hesitate to take notes directly on it and save them so you can access them later from your local directory. Happy machine-learning!          
 
 ### Notes on Open Science Practices and Matlab
 
-_Is it mandatory to abandon MATLAB to have open science practices? Matlab may be a commercial software, but it would be sad to limit the open science movement to open source software users. Specialized fields, such as FFR research, have the wide majority of their resources, expertise, and tools in matlab. Thus, at the current moment, it would be extremely difficult to study FFR without using MATLAB. Nevertheless, there are many open science tools that are compatible with matlab scripts and files. Hence, I tried to implement an open approach in this ML tutorial. Feel free to contribute to it or indicate issues. We aim to buid from this structure and repository!_ http://addgithublinkrighthere.com  
+_Is it mandatory to abandon MATLAB to have open science practices? Matlab may be a commercial software, but it would be sad to limit the open science movement to open source software users. Specialized fields, such as FFR research, have the wide majority of their resources, expertise, and tools in matlab. Thus, at the current moment, it would be extremely difficult to study FFR without using MATLAB. Nevertheless, there are many open science tools that are compatible with matlab scripts and files. Hence, I tried to implement an open approach in this ML tutorial. Feel free to contribute to it or indicate issues with the link below. We aim to buid from this structure and repository!_ https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project  
 
 ### Hidden Markov Model - Classification Goal: 
 
@@ -81,8 +81,8 @@ For more details on this dataset, please see [Cortical Correlates of the Auditor
 ### 1) Stimuli
 The auditory stimuli used were a speech |dah| and a piano tone stimuli, with both a duration of 100ms and a fondamental frequency of 98 Hz. 
 
-100ms 'da' syllable-stimuli vs piano tone-stimuli waveform_downsampled at 16384Hz
-![100ms 'da' syllable-stimuli and piano tone-stimuli waveform_downsampled at 16384Hz](/images/BHS_Tutorial_Stimuli.png)
+100ms 'da' syllable-stimuli vs piano tone-stimuli compared to the FFR of Subject 101
+![Stimulis vs FFR](/images/Llanos_IABProjectPilot_FFR.png)
 
 ### 2) EEG Data
 
@@ -103,7 +103,7 @@ _(Note from 1st author: "It is a funny number because I shifted the data to acco
  _(Note from 1st author: "In the data used for the Jounal of Neuroscience publication, a precedure based on similarity to the grand average was applied. It was less appropriate to use such a procedure here as it may mask some of the inter-individual differences we are interested in.)_/   
 * __Electrodes used for re-referencing__: This was a simple Cz to linked mastoids montage, it's already been referenced.
 
-Here is what a grand average of the stimuli looks like:
+Here is what a grand average of the FFR looks like:
 
 100ms 'da' syllable-FFR vs. piano tone-FFR (_N=27)
 ![100ms 'da' syllable-FFR and piano tone-FFR (_N=27)_](/images/BHS_Tutorial_FFR_GrandAverage.png)
@@ -119,9 +119,19 @@ After extensive research, I obtained and downloaded a pre-processed FFR dataset 
 ### Results at Week 4  
 Although it was quicker to run the scripts on the lab server, I faced challenges with the jupyter notebook as it required configuration to which I did not have access to on the server. I realized that I missed elements to have a reproducible workflow so I decided to adapt to tutorial in orger to have all this information. By the end of this project, I became able to run classifiers on EEG-FFR and have a structured workflow that I will be able to reuse in the future. I also have MIT licences & procedures for futur scripts, an archived EEG-FFR dataset on osf.oi, and got my lab more invades by open sciences practices
 
-## HMM Classification Result
+## HMM Classification Results
 
-# ADD FIGURES HERE!!
+The figure below shows the results for overall HMM decoding accuracy of the syllable vs. tone FFRs. Recognition above chance start at about 100 trials (left panel). Differences related to music experience do not emerge until 1000 trials (center panel). As well, differences related to music experience only emerge for the HMM decoding of the tone (musicians>non musicians); they are not present for the decoding of the syllable stimuli (right panel). 
+
+It is worth noting that the absence of music experience differences in overall decoding accuracy ( syllable & tone together), even with 1000 trials, may be related to the fact that both populations are familiar to the syllable. This possible explaination is supported by the fact that no music experience differences seem to emerge from the HMM decoding of the syllable stimulus (right panel). Hence, the music experience differences could be related to the familiarity to the auditory stimulus, which is greater for the tone among musicians. 
+
+As both the tone and the syllable share the same F0 contour, the differences in the FFRs are realy fine, so more than 100 trials to reach accuracy over chance may be improved by abjusting the parameters of the HMM. (Although, this would be under the scope of another tutorial.) It may also take hundreds of trials for very small, context determined perturbations to emerge in the FFR. 
+
+![Results](/images/Results.png)
+
+## Tools I Learned
+
+All the tools mentionned in the section "Tools I Used"!
 
 ## Course Deliverables
 
@@ -138,15 +148,23 @@ Although it was quicker to run the scripts on the lab server, I faced challenges
  - [Video Introduction on this project](https://www.youtube.com/watch?v=6lX_-AgOXug) 
  - Documentation for a reproducible ML workflow 
  - Commands to run a HMM on FFR-EEG data
- - Matlab Jupiter Notebook tutorial (beginner-friendly)
- - Stand-alone versions of the scripts for advanced users
- - [EEG-FFR Dataset shared by the Zatorre Lab (McGill University) on OSF.oi](ADD IT HERE!!!)
+ - [Tutorial Introduction Jupyter Notebook (beginner-friendly)](https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project/blob/master/Tutorial_Introduction.ipynb)
+ - [Matlab Notebook HMM tutorial](https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project/blob/master/Matlab_HMM_Scripts_Notebook.ipynb) (beginner-friendly)
+ - Stand-alone versions of the [classifiers scripts](https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project/tree/master/FFRclassifiers) for advanced users 
+ - [EEG-FFR Dataset shared by the Zatorre Lab (McGill University) on OSF.oi](https://osf.io/c2b3t/?view_only=d1b30d4e0e7c4d53a8ec80d4d87b33d2)
  - Supplementary ML Scripts (SVM, x-corr, and SLTM) created by Fernando Llanos  
  - MIT licenses and procedures to get open source licence with MATLAB scripts in the future
 
-#### Supplementary Deliverable to Integrate to the Tutorial After the BHS 2020
-* SVM and XCorr models (developped by Fernando Llanos)
-* SLTM (developped by Fernando Llanos)
+#### Supplementary Developments to Integrate to the Tutorial After the BHS 2020
+* Add Video of Setup Procedures and HMM Workflow
+* Fixing the Data selection for the SVM and XCorr models (developped by Fernando Llanos)
+* Explain differences of folder FFRs and Input1
+* Add function for subject selection
+* Testing the tutorial on different computer
+* Integration of the SLTM (developped by Fernando Llanos)
+* Cutting excedentary text
+* Extensive proof reading for typos
+* Proof reading by a novice learner to identify terms to explain 
  
 ## Conclusion 
 
