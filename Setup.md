@@ -30,6 +30,7 @@ would like to have this material cloned on your local machine with the cd comman
 Then with the git clone command and the https address of the repository, you will clone the material on your local machine: 
 
 `cd your_directory/of_choice/`
+
 `git clone https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project.git`     
 
 #### To Start the jupyter notebook of this repository: 
