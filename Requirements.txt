@@ -1,7 +1,7 @@
 MAKE SURE TO REED THIS DOCUMENT BEFORE RUNNING THE CLASSIFIERS
 
 SOFTWARE REQUIREMENTS:
-The Machine-Learning classifiers shared on this repository were used on MATLAB_R2017a and MATLAB_R2018a. 
+The Machine-Learning classifiers shared on this repository were used on MATLAB_R2017a (jupyter notebooks) and MATLAB_R2018a (stand-alone). 
 They may work with later MATLAB versions but have not been tested. 
 
 TOOLBOXES REQUIRED:
