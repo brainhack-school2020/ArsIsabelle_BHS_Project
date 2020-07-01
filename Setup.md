@@ -24,11 +24,13 @@ Make a clone (a copy, see info below) of the git hub repository https://github.c
 
 #### Make a Copy of This Git Repository
 
-Now you need to make a copy of the Notebook and repository on your local machine. To do so, go to your terminal, in the directory where you 
-would like to have this material and clone the repository on your local machine by doing: 
+To do so, first go to your terminal, and go to the directory where you 
+would like to have this material cloned on your local machine with the cd command. 
 
-'cd your_directory/of_choice/'
-'git clone https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project.git'     
+Then with the git clone command and the https address of the repository, you will clone the material on your local machine: 
+
+`cd your_directory/of_choice/`
+`git clone https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project.git`     
 
 #### To Start the jupyter notebook of this repository: 
 
