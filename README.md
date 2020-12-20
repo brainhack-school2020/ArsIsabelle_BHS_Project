@@ -65,7 +65,7 @@ _Figure from [Coffey et al., 2019](https://www-nature-com.proxy3.library.mcgill.
 * Jupyter Notebook (with Python & MATLAB)
 * MATLAB script of an Hidden Markov Model (originally developped by Llanos)
 * A Virtual Environment
-* Supplementary classifiers scripts (SVM, X-Correlation and SLTM developped by F. Llanos)
+* Supplementary classifiers scripts (SVM, X-Correlation and LSTM developped by F. Llanos)
 
 * GitHub 
 * GitKraken
@@ -153,7 +153,7 @@ All the tools mentionned in the section "Tools I Used"!
  - [Tutorial HMM in Matlab Jupyter Notebook](https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project/blob/master/Matlab_HMM_Scripts_Notebook.ipynb) (beginner-friendly)
  - Stand-alone versions of the [classifiers scripts](https://github.com/brainhack-school2020/ArsIsabelle_BHS_Project/tree/master/FFRclassifiers) for advanced users 
  - [EEG-FFR Dataset shared by the Zatorre Lab (McGill University) on OSF.oi](https://osf.io/c2b3t/?view_only=d1b30d4e0e7c4d53a8ec80d4d87b33d2)
- - Supplementary ML Scripts (SVM, x-corr, and SLTM) created by Fernando Llanos  
+ - Supplementary ML Scripts (SVM, x-corr, and LSTM) created by Fernando Llanos  
  - MIT licenses and procedures to get open source licence with MATLAB scripts in the future
 
 #### Supplementary Developments to Integrate to the Tutorial After the BHS 2020
@@ -162,7 +162,7 @@ All the tools mentionned in the section "Tools I Used"!
 * Adding a section to explain differences between the folder FFRs and Input1
 * Adding a function for subject selection
 * Testing the tutorial on different computer
-* Integrating the SLTM (script developped by Fernando Llanos)
+* Integrating the LSTM (script developped by Fernando Llanos)
 * Cutting excedentary text
 * Extensive proof reading for typos
 * Proof reading by a novice learner to identify terms that require explainations 
